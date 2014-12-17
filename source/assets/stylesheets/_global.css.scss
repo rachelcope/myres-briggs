@@ -1,20 +1,252 @@
-body {
-  background: $light-gray;
-  color: $medium-gray;
+.wrapper {
+  @include outer-container;
 }
 
-.delete-me {
-  @include align-items(center);
-  @include display(flex);
-  @include justify-content(center);
-  height: 100vh;
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
 
-  .container {
-    text-align: center;
+header {
+  background-color: $dark-gray;
+  background-size: cover;
+  padding: 300px 0;
 
-    h1 {
-      font-weight: 200;
-    }
+
+  h1 {
+    color: white;
+    font-weight: 700;
   }
 
+  h4 {
+    color: white;
+    margin-top: 25px;
+    font-weight: 300;
+  }
 }
+
+.hero {
+  max-height: 95vh;
+  min-height: 20em;
+}
+
+h2 {
+  color: $dark-gray;
+}
+
+.row {
+  padding: 250px 0;
+
+  &:nth-child(even) {
+    background: $light-gray;
+  }
+}
+
+.button-wrapper {
+  @include span-columns(6);
+  @include omega;
+
+  h4 {
+    color: $medium-gray;
+  }
+}
+
+.button {
+  @include transition(all linear 0.2s);
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  font-size: $base-font-size * 1.5;
+  font-weight: 600;
+  padding: em(15) em(25);
+  text-align: center;
+  margin: em(60) auto em(40);
+  width: em(200);
+}
+
+.button1 {
+  @extend .button;
+  border: 2px solid #a5a831;
+  color: #a5a831;
+
+  &:hover {
+    background: #a5a831;
+    color: white;
+  }
+}
+
+.button2 {
+  @extend .button;
+  border: 2px solid #cf7349;
+  color: #cf7349;
+
+  &:hover {
+    background: #cf7349;
+    color: white;
+  }
+}
+
+.your-type {
+  padding: em(100) 0 em(300);
+
+  h2 {
+    background: #cf7349;
+    color: white;
+    border-radius: em(5);
+    display: block;
+    margin: em(20) auto;
+    padding: em(10) em(20);
+    width: em(200);
+  }
+}
+
+//
+// h3 {
+//     font-size: 18px;
+//     font-weight: 300;
+// }
+//
+//
+// header h2 {
+//     font-size: 25px;
+//     font-weight: 300;
+//     margin: 29px;
+// }
+//
+// #mbti-quiz h2 {
+//     font-size: 23px;
+//     font-weight: 500;
+//     margin-top: 30px;
+// }
+//
+// #mbti-quiz h3 {
+//     font-size: 20px;
+//     font-weight: 700;
+//     margin-top: 20px;
+// }
+//
+// #mbti-quiz {
+//     background-color: #333333;
+// }
+//
+// .container {
+//     width: 980px;
+// }
+//
+// #mbti-quiz .row {
+//     padding: 40px 0 80px;
+//     border-bottom: 1px solid #929292;
+// }
+//
+// #mbti-quiz img {
+//     margin: 0 auto;
+//     display: block;
+// }
+//
+// #mbti-quiz .row button {
+//     background-color: #60c4ba;
+//     border: 0;
+//     display: block;
+//     border-radius:3px;
+//     padding: 25px;
+//     margin: 55px auto 0;
+//     width: 300px;
+//     color: white;
+//     font-family: 'Lato', sans-serif;
+//     font-size: 25px;
+//     font-weight: 700;
+// }
+//
+// #mbti-quiz .row button:hover {
+//   background-color: #72cec3;
+// }
+//
+// #explore .container h1 {
+//     margin-top: 50px;
+// }
+//
+// #explore .container div {
+//     background-repeat:no-repeat;
+//     height: 318px;
+//     width: 460px;
+//     float:left;
+//     margin-top: 20px;
+// }
+//
+// #explore p {
+//     font-family: 'Lato', sans-serif;
+//     font-size: 20px;
+//     text-align: center;
+//     color: black;
+//     margin-top: 40px;
+//     line-height: 1.5;
+// }
+//
+// #explore .container div h5 {
+//     margin-top: 100px;
+//     color: white;
+//     text-transform:uppercase;
+//     font-weight: 700;
+//     font-size: 50px;
+// }
+//
+// #explore .container div h4 {
+//     font-style: italic;
+//     font-weight: 700;
+//     font-size: 20px;
+//     margin-top: 30px;
+// }
+//
+// #explore .container div ul {
+//     list-style-type: none;
+//     margin: 0 auto;
+//     padding: 0;
+//     overflow: hidden;
+// }
+//
+// #explore .container div ul a:link {
+//     float: left;
+//     display: block;
+//     font-family: 'Lato', sans-serif;
+//     font-size: 18px;
+//     font-weight: bold;
+//     color: #FFFFFF;
+//     background-color: #60c4ba;
+//     text-align: center;
+//     padding: 6px 0;
+//     text-decoration: none;
+//     margin: 50px 0 0 28px;
+//     border-radius:3px;
+//     width: 80px;
+// }
+//
+// #explore .container div ul a:hover {
+//     background-color: #72cec3;
+// }
+//
+// #explore .container div ul a:visited {
+//     color: #ffffff;
+// }
+//
+//
+// #the-artisan {
+//     background-image:url('../images/SP.png');
+//     margin-right: 20px;
+//
+// }
+//
+// #the-guardian {
+//     background-image:url('../images/SJ.png');
+// }
+//
+// #the-rationalist {
+//     background-image:url('../images/NT.png');
+//     margin-right: 20px;
+// }
+//
+// #the-idealist {
+//     background-image:url('../images/NF.png');
+// }
+//
+// #explore .container {
+//   margin-bottom: 60px;
+// }

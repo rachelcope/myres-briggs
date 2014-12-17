@@ -1,7 +1,7 @@
 // Typography
 $sans-serif: $helvetica;
 $serif: $georgia;
-$base-font-family: $sans-serif;
+$base-font-family: 'Raleway', $sans-serif;
 $header-font-family: $base-font-family;
 
 // Sizes
@@ -15,10 +15,11 @@ $base-border-radius: em(3);
 $blue: #477DCA;
 $dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #DDD;
+$light-gray: #f7f7f7;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
+$dark-gray: #2e393e;
 
 // Background Color
 $base-background-color: white;

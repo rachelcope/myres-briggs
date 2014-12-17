@@ -2,10 +2,110 @@
 title: Page Title
 ---
 
-.delete-me
-  .container
-    %h1 Proteus
-    %p
-      You're all set!
-      <a href="http://github.com/thoughtbot/proteus-middleman">Let's get started</a>
-      building your prototype.
+%header.hero
+  %h1 What's Your Type?
+  %h4
+    A 4-Question
+    Myers-Briggs Personality Quiz
+
+#section
+  .row
+    .wrapper
+      %h2 1) I tend to be...
+      .button-wrapper
+        .button1 Extraverted
+        %h4 I get energy by being with people
+      .button-wrapper
+        .button2 Introverted
+        %h4 I get energy from alone time
+
+  .row
+    .wrapper
+      %h2 2) I am generally more...
+      .button-wrapper
+        .button1 Abstract
+        %h4 I am often up-in-the-clouds
+      .button-wrapper
+        .button2 Concrete
+        %h4 I am more down-to-earth
+
+  .row
+    .wrapper
+      %h2 3) I usually make decisions based on...
+      .button-wrapper
+        .button1 Feelings
+        %h4 I am more values-based <br> and view things as subjective
+      .button-wrapper
+        .button2 Logic
+        %h4 I am more principle-based <br> and view things as objective
+
+  .row
+    .wrapper
+      %h2 4) I typically...
+      .button-wrapper
+        .button1 Plan ahead
+        %h4 I generally try and run my life
+      .button-wrapper
+        .button2 Adapt as I go
+        %h4 I generally like to let life happen
+
+%section.your-type
+  %h3 Well done! You're an...
+  %h2 INFJ
+
+#explore
+.container.wrapper
+  %h2 Explore other MBTI Types!
+  %p The Myers-Briggs is designed to measure how people perceive the world and make decisions. By exploring your own and other types, you can better understand yourself and those around you. Explore the links below to learn more!
+#the-artisan
+  %h5
+    The Artisan
+    %h4 Driven by spontineity & freedom
+    %ul
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/ESTP", :target => "_blank"} ESTP
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/ESFP", :target => "_blank"} ESFP
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/ISTP", :target => "_blank"} ISTP
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/ISFP", :target => "_blank"} ISFP
+#the-guardian
+  %h5
+    The Guardian
+    %h4 Driven by responsibility & security
+    %ul
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/ESTJ", :target => "_blank"} ESTJ
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/ESFJ", :target => "_blank"} ESFJ
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/ISTJ", :target => "_blank"} ISTJ
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/ISFJ", :target => "_blank"} ISFJ
+#the-rationalist
+  %h5
+    The Rationalist
+    %h4 Driven by knowledge & mastery
+    %ul
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/ENTP", :target => "_blank"} ENTP
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/ENTJ", :target => "_blank"} ENTL
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/INTP", :target => "_blank"} INTP
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/INTJ", :target => "_blank"} INTJ
+#the-idealist
+  %h5
+    The Idealist
+    %h4 Driven by meaning & identity
+    %ul
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/ENFP", :target => "_blank"} ENFP
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/ENFJ", :target => "_blank"} ENFL
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/INFP", :target => "_blank"} INFP
+      %li
+        %a{:href => "http://en.wikipedia.org/wiki/INFJ", :target => "_blank"} INFJ
