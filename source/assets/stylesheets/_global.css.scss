@@ -68,7 +68,7 @@ h2 {
   border: 2px solid #a5a831;
   color: #a5a831;
 
-  &:hover {
+  &:hover, &.active {
     background: #a5a831;
     color: white;
   }
@@ -79,7 +79,7 @@ h2 {
   border: 2px solid #cf7349;
   color: #cf7349;
 
-  &:hover {
+  &:hover, &.active {
     background: #cf7349;
     color: white;
   }
@@ -87,8 +87,9 @@ h2 {
 
 .your-type {
   padding: em(100) 0 em(300);
+  display: none;
 
-  h2 {
+  a {
     background: #cf7349;
     color: white;
     border-radius: em(5);

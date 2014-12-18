@@ -13,45 +13,46 @@ title: Page Title
     .wrapper
       %h2 1) I tend to be...
       .button-wrapper
-        .button1 Extraverted
+        .button1{:data => {:letter => "E"}} Extraverted
         %h4 I get energy by being with people
       .button-wrapper
-        .button2 Introverted
+        .button2{:data => {:letter => "I"}} Introverted
         %h4 I get energy from alone time
 
   .row
     .wrapper
       %h2 2) I am generally more...
       .button-wrapper
-        .button1 Abstract
+        .button1{:data => {:letter => "N"}} Abstract
         %h4 I am often up-in-the-clouds
       .button-wrapper
-        .button2 Concrete
+        .button2{:data => {:letter => "S"}} Concrete
         %h4 I am more down-to-earth
 
   .row
     .wrapper
       %h2 3) I usually make decisions based on...
       .button-wrapper
-        .button1 Feelings
+        .button1{:data => {:letter => "F"}} Feelings
         %h4 I am more values-based <br> and view things as subjective
       .button-wrapper
-        .button2 Logic
+        .button2{:data => {:letter => "T"}} Logic
         %h4 I am more principle-based <br> and view things as objective
 
   .row
     .wrapper
       %h2 4) I typically...
       .button-wrapper
-        .button1 Plan ahead
+        .button1{:data => {:letter => "J"}} Plan ahead
         %h4 I generally try and run my life
       .button-wrapper
-        .button2 Adapt as I go
+        .button2{:data => {:letter => "P"}} Adapt as I go
         %h4 I generally like to let life happen
 
 %section.your-type
   %h3 Well done! You're an...
-  %h2 INFJ
+  %h2
+    %a{:target => "_blank", :class => "mbti-letters"}
 
 #explore
 .container.wrapper
