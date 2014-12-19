@@ -1,18 +1,19 @@
 ---
-title: MBTI Quiz
+title: What's Your Type
 ---
 
 %header.hero
   .video-container
     %video{autoplay: "", height: "auto", loop: "loop", muted: "muted", preload: "auto", width: "100%"}
-      %source{:src => "assets/images/header.mp4", :type => "video/mp4"}
-      %img{:src => ""}
-  .color
+      %source{:src => "assets/images/video.mp4", :type => "video/mp4"}
+      %img{:src => "http://images.thoughtbot.com/EOY-2014/company-photo.png"}
+    .color
+    .header-copy
+      %h1 What's Your Type?
+      %h4
+        A 4-question Myers-Briggs personality quiz
 
-  %h1 What's Your Type?
-  %h4
-    A 4-Question
-    Myers-Briggs Personality Quiz
+      .arrow ⬇
 
 
 #section
@@ -40,7 +41,7 @@ title: MBTI Quiz
     .wrapper
       %h2 3) I usually make decisions based on...
       .button-wrapper
-        .button1{:data => {:letter => "F"}} Feelings
+        .button1{:data => {:letter => "F"}} My gut
         %h4 I am more values-based <br> and view things as subjective
       .button-wrapper
         .button2{:data => {:letter => "T"}} Logic
@@ -57,63 +58,74 @@ title: MBTI Quiz
         %h4 I generally like to let life happen
 
 %section.your-type
-  %h3 Well done! You're an...
+  %h3 Well done! You're likely a...
   %h2
     %a{:target => "_blank", :class => "mbti-letters"}
+  %h3.read-more Clicking above to learn more
 
-#explore
-.container.wrapper
-  %h2 Explore other MBTI Types!
-  %p The Myers-Briggs is designed to measure how people perceive the world and make decisions. By exploring your own and other types, you can better understand yourself and those around you. Explore the links below to learn more!
-#the-artisan
-  %h5
-    The Artisan
-    %h4 Driven by spontineity & freedom
-    %ul
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/ESTP", :target => "_blank"} ESTP
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/ESFP", :target => "_blank"} ESFP
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/ISTP", :target => "_blank"} ISTP
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/ISFP", :target => "_blank"} ISFP
-#the-guardian
-  %h5
-    The Guardian
-    %h4 Driven by responsibility & security
-    %ul
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/ESTJ", :target => "_blank"} ESTJ
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/ESFJ", :target => "_blank"} ESFJ
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/ISTJ", :target => "_blank"} ISTJ
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/ISFJ", :target => "_blank"} ISFJ
-#the-rationalist
-  %h5
-    The Rationalist
-    %h4 Driven by knowledge & mastery
-    %ul
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/ENTP", :target => "_blank"} ENTP
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/ENTJ", :target => "_blank"} ENTL
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/INTP", :target => "_blank"} INTP
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/INTJ", :target => "_blank"} INTJ
-#the-idealist
-  %h5
-    The Idealist
-    %h4 Driven by meaning & identity
-    %ul
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/ENFP", :target => "_blank"} ENFP
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/ENFJ", :target => "_blank"} ENFL
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/INFP", :target => "_blank"} INFP
-      %li
-        %a{:href => "http://en.wikipedia.org/wiki/INFJ", :target => "_blank"} INFJ
+%section.explore
+  .wrapper
+    .text-wrapper
+      %h2 Explore other types
+      %p
+        The Myers-Briggs is designed to measure how <b>people perceive the world</b>
+        and <b>make decisions</b>. By exploring your own and other types, you can better
+        understand yourself and those around you. Explore the links below to learn more.
+
+    .types-wrapper
+      .the-artisan.types
+        %h2 The Artisan
+        %h5 Driven by spontineity & freedom
+        %ul
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/ESTP", :target => "_blank"} ESTP
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/ESFP", :target => "_blank"} ESFP
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/ISTP", :target => "_blank"} ISTP
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/ISFP", :target => "_blank"} ISFP
+
+      .the-guardian.types
+        %h2 The Guardian
+        %h5 Driven by responsibility & security
+        %ul
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/ESTJ", :target => "_blank"} ESTJ
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/ESFJ", :target => "_blank"} ESFJ
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/ISTJ", :target => "_blank"} ISTJ
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/ISFJ", :target => "_blank"} ISFJ
+
+      .the-rationalist.types
+        %h2 The Rationalist
+        %h5 Driven by knowledge & mastery
+        %ul
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/ENTP", :target => "_blank"} ENTP
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/ENTJ", :target => "_blank"} ENTL
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/INTP", :target => "_blank"} INTP
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/INTJ", :target => "_blank"} INTJ
+
+      .the-idealist.types
+        %h2 The Idealist
+        %h5 Driven by meaning & identity
+        %ul
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/ENFP", :target => "_blank"} ENFP
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/ENFJ", :target => "_blank"} ENFL
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/INFP", :target => "_blank"} INFP
+          %li
+            %a{:href => "http://en.wikipedia.org/wiki/INFJ", :target => "_blank"} INFJ
+
+%footer
+  %h3
+    Made with ♥ by <a href="https://twitter.com/rachelcope" target="_blank">Rachel Cope</a>
+  %p © 2014 What's Your Type

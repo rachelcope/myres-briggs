@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 .video-container {
   @include animation(slideDown 0.6s .55s 1 backwards);
   padding-bottom: 56.25%;
+  position: relative;
   height: 0;
 }
 
@@ -18,41 +19,41 @@ video {
 
 .color {
   @include position(absolute, 0px 0px 0px 0px);
-  background-color:$light-gray;
+  background-color:$dark-gray;
   opacity: 0.90;
 }
 
 header {
-  // background-size: cover;
-  // padding: 300px 0;
-  color: white;
-  text-align: center;
   position: relative;
+}
 
+.header-copy {
+  @include position(absolute, 0px 0px 0px 0px);
+  color: white;
+  @include align-items(center);
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
 
   h1 {
-    color: white;
     font-weight: 700;
+    z-index: 10;
   }
 
   h4 {
-    color: white;
     margin-top: 25px;
-    font-weight: 300;
+    font-weight: 400;
+  }
+
+  .arrow {
+    @include position(absolute, 100px null null null);
+    font-size: em(30);
+    margin-top: em(150);
   }
 }
 
-.hero {
-  // max-height: 95vh;
-  // min-height: 20em;
-}
-
-h2 {
-  color: $dark-gray;
-}
-
 .row {
-  padding: 250px 0;
+  padding: 210px 0;
 
   &:nth-child(even) {
     background: $light-gray;
@@ -65,6 +66,7 @@ h2 {
 
   h4 {
     color: $medium-gray;
+    font-weight: 400;
   }
 }
 
@@ -83,189 +85,126 @@ h2 {
 
 .button1 {
   @extend .button;
-  border: 2px solid #a5a831;
-  color: #a5a831;
+  border: 2px solid $red;
+  color: $red;
 
   &:hover, &.active {
-    background: #a5a831;
+    background: $red;
     color: white;
   }
 }
 
 .button2 {
   @extend .button;
-  border: 2px solid #cf7349;
-  color: #cf7349;
+  border: 2px solid $green;
+  color: $green;
 
   &:hover, &.active {
-    background: #cf7349;
+    background: $green;
     color: white;
   }
 }
 
 .your-type {
-  padding: em(100) 0 em(300);
+  background: $dark-gray;
+  color: white;
   display: none;
+  padding: em(100) 0 em(100);
 
   a {
-    background: #cf7349;
-    color: white;
+    background: white;
+    color: $green;
     border-radius: em(5);
     display: block;
     margin: em(20) auto;
     padding: em(10) em(20);
     width: em(200);
   }
+
+  .read-more {
+    font-weight: 200;
+  }
 }
 
-//
-// h3 {
-//     font-size: 18px;
-//     font-weight: 300;
-// }
-//
-//
-// header h2 {
-//     font-size: 25px;
-//     font-weight: 300;
-//     margin: 29px;
-// }
-//
-// #mbti-quiz h2 {
-//     font-size: 23px;
-//     font-weight: 500;
-//     margin-top: 30px;
-// }
-//
-// #mbti-quiz h3 {
-//     font-size: 20px;
-//     font-weight: 700;
-//     margin-top: 20px;
-// }
-//
-// #mbti-quiz {
-//     background-color: #333333;
-// }
-//
-// .container {
-//     width: 980px;
-// }
-//
-// #mbti-quiz .row {
-//     padding: 40px 0 80px;
-//     border-bottom: 1px solid #929292;
-// }
-//
-// #mbti-quiz img {
-//     margin: 0 auto;
-//     display: block;
-// }
-//
-// #mbti-quiz .row button {
-//     background-color: #60c4ba;
-//     border: 0;
-//     display: block;
-//     border-radius:3px;
-//     padding: 25px;
-//     margin: 55px auto 0;
-//     width: 300px;
-//     color: white;
-//     font-family: 'Lato', sans-serif;
-//     font-size: 25px;
-//     font-weight: 700;
-// }
-//
-// #mbti-quiz .row button:hover {
-//   background-color: #72cec3;
-// }
-//
-// #explore .container h1 {
-//     margin-top: 50px;
-// }
-//
-// #explore .container div {
-//     background-repeat:no-repeat;
-//     height: 318px;
-//     width: 460px;
-//     float:left;
-//     margin-top: 20px;
-// }
-//
-// #explore p {
-//     font-family: 'Lato', sans-serif;
-//     font-size: 20px;
-//     text-align: center;
-//     color: black;
-//     margin-top: 40px;
-//     line-height: 1.5;
-// }
-//
-// #explore .container div h5 {
-//     margin-top: 100px;
-//     color: white;
-//     text-transform:uppercase;
-//     font-weight: 700;
-//     font-size: 50px;
-// }
-//
-// #explore .container div h4 {
-//     font-style: italic;
-//     font-weight: 700;
-//     font-size: 20px;
-//     margin-top: 30px;
-// }
-//
-// #explore .container div ul {
-//     list-style-type: none;
-//     margin: 0 auto;
-//     padding: 0;
-//     overflow: hidden;
-// }
-//
-// #explore .container div ul a:link {
-//     float: left;
-//     display: block;
-//     font-family: 'Lato', sans-serif;
-//     font-size: 18px;
-//     font-weight: bold;
-//     color: #FFFFFF;
-//     background-color: #60c4ba;
-//     text-align: center;
-//     padding: 6px 0;
-//     text-decoration: none;
-//     margin: 50px 0 0 28px;
-//     border-radius:3px;
-//     width: 80px;
-// }
-//
-// #explore .container div ul a:hover {
-//     background-color: #72cec3;
-// }
-//
-// #explore .container div ul a:visited {
-//     color: #ffffff;
-// }
-//
-//
-// #the-artisan {
-//     background-image:url('../images/SP.png');
-//     margin-right: 20px;
-//
-// }
-//
-// #the-guardian {
-//     background-image:url('../images/SJ.png');
-// }
-//
-// #the-rationalist {
-//     background-image:url('../images/NT.png');
-//     margin-right: 20px;
-// }
-//
-// #the-idealist {
-//     background-image:url('../images/NF.png');
-// }
-//
-// #explore .container {
-//   margin-bottom: 60px;
-// }
+.explore {
+  margin: em(100) 0 em(100);
+  text-align: center;
+}
+
+.types-wrapper {
+  margin-left: em(60);
+}
+
+.types {
+  @include span-columns(6);
+  @include omega;
+  @include size(em(460) em(318));
+  color: white;
+  margin-top: em(25);
+  padding-top: em(100);
+
+  a {
+    background: $green;
+    border-radius: em(3);
+    color: white;
+    display: inline-block;
+    float: left;
+    font-weight: 600;
+    padding: em(5) em(15);
+    margin: em(5);
+  }
+
+  ul {
+    padding: em(30) 0 0 em(80);
+  }
+}
+
+.text-wrapper {
+  padding-bottom: em(55);
+
+  p {
+    padding-top: em(25);
+    font-size: em(18);
+  }
+}
+
+.the-artisan {
+    background-image: image-url('../images/SP.png');
+    margin-right: 20px;
+}
+
+.the-guardian {
+    background-image: image-url('../images/SJ.png');
+}
+
+.the-rationalist {
+    background-image: image-url('../images/NT.png');
+    margin-right: 20px;
+}
+
+.the-idealist {
+    background-image: image-url('../images/NF.png');
+}
+
+footer {
+  background: $dark-gray;
+  color: white;
+  padding: em(100) 0;
+  text-align: center;
+
+  h3 {
+    font-weight: 300;
+    padding-bottom: em(30);
+
+    a {
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
+
+      &:hover, &:visited {
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
