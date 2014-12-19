@@ -6,10 +6,28 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.video-container {
+  @include animation(slideDown 0.6s .55s 1 backwards);
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+video {
+  @include position(absolute, 0px 0px 0px 0px);
+}
+
+.color {
+  @include position(absolute, 0px 0px 0px 0px);
+  background-color:$light-gray;
+  opacity: 0.90;
+}
+
 header {
-  background-color: $dark-gray;
-  background-size: cover;
-  padding: 300px 0;
+  // background-size: cover;
+  // padding: 300px 0;
+  color: white;
+  text-align: center;
+  position: relative;
 
 
   h1 {
@@ -25,8 +43,8 @@ header {
 }
 
 .hero {
-  max-height: 95vh;
-  min-height: 20em;
+  // max-height: 95vh;
+  // min-height: 20em;
 }
 
 h2 {
