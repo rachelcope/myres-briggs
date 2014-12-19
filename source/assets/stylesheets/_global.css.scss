@@ -17,10 +17,13 @@ h1, h2, h3, h4, h5, h6 {
   height: 0;
 
   p {
-    @include position (absolute, null null 100px 50%);
-    color: white;
-    width: 200px;
-    margin-left: -100px;
+
+    @include media($medium-screen) {
+      @include position (absolute, null null 100px 50%);
+      color: white;
+      width: 200px;
+      margin-left: -100px;
+    }
   }
 }
 
@@ -55,16 +58,10 @@ header {
     margin: 25px 0 100px;
     font-weight: 400;
   }
-
-  .arrow {
-    @include position(absolute, 100px null null null);
-    font-size: em(30);
-    margin-top: em(150);
-  }
 }
 
 .row {
-  padding: 210px 0;
+  padding: 200px 0;
 
   &:nth-child(even) {
     background: $light-gray;
@@ -72,12 +69,16 @@ header {
 }
 
 .button-wrapper {
-  @include span-columns(6);
+  @include span-columns(12);
   @include omega;
 
   h4 {
     color: $medium-gray;
     font-weight: 400;
+  }
+
+  @include media($medium-screen) {
+    @include span-columns(6);
   }
 }
 
@@ -121,6 +122,7 @@ header {
   color: white;
   display: none;
   padding: em(100) 0 em(100);
+  text-align: center;
 
   a {
     background: white;
@@ -132,7 +134,8 @@ header {
     width: em(200);
   }
 
-  .read-more {
+  p {
+    font-size: em(18);
     font-weight: 200;
   }
 }
@@ -143,7 +146,7 @@ header {
 }
 
 .types-wrapper {
-  margin-left: em(60);
+  margin: 0 em(60);
 }
 
 .types {
@@ -153,6 +156,8 @@ header {
   color: white;
   margin-top: em(25);
   padding-top: em(100);
+
+
 
   a {
     background: $green;
