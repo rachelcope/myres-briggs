@@ -614,25 +614,28 @@ input[type="submit"] {
 h1, h2, h3, h4, h5, h6 {
   text-align: center; }
 
-/* line 13, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 9, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .video-container {
   -webkit-animation: slideDown 0.6s 0.55s 1 backwards;
   -moz-animation: slideDown 0.6s 0.55s 1 backwards;
   animation: slideDown 0.6s 0.55s 1 backwards;
   padding-bottom: 56.25%;
-  position: relative;
-  height: 0; }
-  @media screen and (min-width: 40em) {
-    /* line 19, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
-    .video-container p {
-      position: absolute;
-      bottom: 100px;
-      left: 50%;
-      color: white;
-      width: 200px;
-      margin-left: -100px; } }
+  position: relative; }
+  /* line 14, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  .video-container p {
+    display: none; }
+    @media screen and (min-width: 40em) {
+      /* line 14, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+      .video-container p {
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        color: white;
+        display: initial;
+        width: 200px;
+        margin-left: -100px; } }
 
-/* line 30, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 27, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 video {
   position: absolute;
   top: 0px;
@@ -640,7 +643,7 @@ video {
   bottom: 0px;
   left: 0px; }
 
-/* line 34, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 31, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .color {
   position: absolute;
   top: 0px;
@@ -650,11 +653,11 @@ video {
   background-color: #2e393e;
   opacity: 0.90; }
 
-/* line 40, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 37, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 header {
   position: relative; }
 
-/* line 44, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 41, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .header-copy {
   position: absolute;
   top: 0px;
@@ -694,48 +697,50 @@ header {
   justify-content: center;
   -ms-flex-pack: center;
   color: white; }
-  /* line 52, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
-  .header-copy h1 {
-    font-weight: 700;
-    z-index: 10; }
-  /* line 57, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  /* line 50, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
   .header-copy h4 {
     margin: 25px 0 100px;
-    font-weight: 400; }
+    font-weight: 400;
+    display: none; }
+    @media screen and (min-width: 40em) {
+      /* line 50, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+      .header-copy h4 {
+        display: initial; } }
 
-/* line 63, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 61, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .row {
   padding: 200px 0; }
-  /* line 66, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  /* line 64, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
   .row:nth-child(even) {
     background: #f7f7f7; }
 
 /* line 71, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
-.button-wrapper {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  margin-right: 0; }
-  /* line 38, /Users/rachelcope/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
-  .button-wrapper:last-child {
+.button-wrapper h4 {
+  color: #999;
+  font-weight: 400; }
+@media screen and (min-width: 53.75em) {
+  /* line 69, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  .button-wrapper {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
     margin-right: 0; }
-  /* line 75, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
-  .button-wrapper h4 {
-    color: #999;
-    font-weight: 400; }
-  @media screen and (min-width: 40em) {
-    /* line 71, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
-    .button-wrapper {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      /* line 38, /Users/rachelcope/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .button-wrapper:last-child {
-        margin-right: 0; } }
+    /* line 38, /Users/rachelcope/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .button-wrapper:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 40em) {
+  /* line 69, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  .button-wrapper {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    /* line 38, /Users/rachelcope/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .button-wrapper:last-child {
+      margin-right: 0; } }
 
-/* line 85, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 86, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .button, .button1, .button2 {
   -webkit-transition: all linear 0.2s;
   -moz-transition: all linear 0.2s;
@@ -750,32 +755,32 @@ header {
   margin: 3.75em auto 2.5em;
   width: 12.5em; }
 
-/* line 98, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 99, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .button1 {
   border: 2px solid #ed6764;
   color: #ed6764; }
-  /* line 103, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  /* line 104, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
   .button1:hover, .button1.active {
     background: #ed6764;
     color: white; }
 
-/* line 109, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 110, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .button2 {
   border: 2px solid #60c4ba;
   color: #60c4ba; }
-  /* line 114, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  /* line 115, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
   .button2:hover, .button2.active {
     background: #60c4ba;
     color: white; }
 
-/* line 120, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 121, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .your-type {
   background: #2e393e;
   color: white;
   display: none;
   padding: 6.25em 0 6.25em;
   text-align: center; }
-  /* line 127, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  /* line 128, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
   .your-type a {
     background: white;
     color: #60c4ba;
@@ -784,21 +789,21 @@ header {
     margin: 1.25em auto;
     padding: 0.625em 1.25em;
     width: 12.5em; }
-  /* line 137, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  /* line 138, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
   .your-type p {
     font-size: 1.125em;
     font-weight: 200; }
 
-/* line 143, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 144, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .explore {
   margin: 6.25em 0 6.25em;
   text-align: center; }
 
-/* line 148, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 149, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .types-wrapper {
   margin: 0 3.75em; }
 
-/* line 152, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 153, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .types {
   float: left;
   display: block;
@@ -813,7 +818,7 @@ header {
   /* line 38, /Users/rachelcope/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
   .types:last-child {
     margin-right: 0; }
-  /* line 162, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  /* line 163, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
   .types a {
     background: #60c4ba;
     border-radius: 0.1875em;
@@ -823,52 +828,52 @@ header {
     font-weight: 600;
     padding: 0.3125em 0.9375em;
     margin: 0.3125em; }
-  /* line 173, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  /* line 174, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
   .types ul {
     padding: 1.875em 0 0 5em; }
 
-/* line 178, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 179, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .text-wrapper {
   padding-bottom: 3.4375em; }
-  /* line 181, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  /* line 182, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
   .text-wrapper p {
     padding-top: 1.5625em;
     font-size: 1.125em; }
 
-/* line 187, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 188, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .the-artisan {
   background-image: url("../images/SP.png");
   margin-right: 20px; }
 
-/* line 192, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 193, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .the-guardian {
   background-image: url("../images/SJ.png"); }
 
-/* line 196, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 197, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .the-rationalist {
   background-image: url("../images/NT.png");
   margin-right: 20px; }
 
-/* line 201, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 202, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 .the-idealist {
   background-image: url("../images/NF.png"); }
 
-/* line 205, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+/* line 206, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
 footer {
   background: #2e393e;
   color: white;
   padding: 6.25em 0;
   text-align: center; }
-  /* line 211, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+  /* line 212, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
   footer h3 {
     font-weight: 300;
     padding-bottom: 1.875em; }
-    /* line 215, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+    /* line 216, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
     footer h3 a {
       color: white;
       font-weight: 500;
       text-decoration: underline; }
-      /* line 220, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
+      /* line 221, /Users/rachelcope/Documents/development/mbti-test/source/assets/stylesheets/_global.css.scss */
       footer h3 a:hover, footer h3 a:visited {
         color: white;
         cursor: pointer; }
