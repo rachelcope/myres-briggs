@@ -46,20 +46,31 @@ header {
   @include justify-content(center);
   color: white;
 
+  h1 {
+    font-size: em(35);
+
+    @include media($mobile-screen) {
+      font-size: em(65);
+    }
+  }
 
   h4 {
     margin: 25px 0 100px;
     font-weight: 400;
-    display: none;
+    font-size: em(17);
 
-    @include media($medium-screen) {
-      display: initial;
+    @include media($mobile-screen) {
+      font-size: em(25);
     }
   }
 }
 
 .row {
-  padding: 200px 0;
+  padding: 100px 0;
+
+  @include media($mobile-screen) {
+    padding: 200px 0;
+  }
 
   &:nth-child(even) {
     background: $light-gray;
