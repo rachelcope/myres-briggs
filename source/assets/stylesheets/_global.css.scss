@@ -48,6 +48,7 @@ header {
 
   h1 {
     font-size: em(35);
+    padding: em(30) 0 em(10);
 
     @include media($mobile-screen) {
       font-size: em(65);
