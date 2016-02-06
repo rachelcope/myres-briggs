@@ -69,10 +69,10 @@ header {
   }
 
   .scroll {
+    @include position(absolute, null null 5px 50%)
     bottom: 5px;
     left: 50%;
     margin-left: -75px;
-    position: absolute;
     width: 152px;
 
     p {
